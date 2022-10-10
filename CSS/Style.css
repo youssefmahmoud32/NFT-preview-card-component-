@@ -110,7 +110,12 @@ footer {
 footer img {
   height: 50px;
   margin: 0.5rem 10px 0 0;
-  border: solid 3px white;
+  border: white 3px solid;
+  border-radius: 2rem;
+  -webkit-border-radius: 2rem;
+  -moz-border-radius: 2rem;
+  -ms-border-radius: 2rem;
+  -o-border-radius: 2rem;
 }
 
 footer p {
