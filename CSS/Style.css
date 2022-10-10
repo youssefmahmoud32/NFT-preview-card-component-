@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Open+Sans:wght@400;700&family=Outfit:wght@300;400;600&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --Soft-blue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --Very-dark-blue-main: hsl(217, 54%, 11%);
+  --Very-dark-blue-card: hsl(216, 50%, 16%);
+  --Very-dark-blue-line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+img {
+  max-width: 100%;
+}
+/* Start body */
+body {
+  background-color: var(--Very-dark-blue-main);
+  font-family: "Outfit", sans-serif;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 1px);
+  margin: 1.25rem;
+}
+/* End body */
+
+/* Start Container */
+.container {
+  background-color: var(--Very-dark-blue-card);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 5px 5px 5px rgba(0.5, 0.5, 0.5, 0.5);
+}
+/* End Container */
+
+/* Start img */
+.container .img {
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 375px) {
+  .container {
+    width: 350px;
+  }
+}
+/* Start h1 */
+h1 {
+  color: var(--White);
+  font-size: 1.554rem;
+  margin-bottom: 1rem;
+}
+/* End h1 */
+
+/* Start p */
+.text {
+  color: var(--Soft-blue);
+  margin-bottom: 1rem;
+}
+/* End p */
+
+/* Start div with .text-icons class */
+.text-icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.first,
+.sconed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first svg,
+.sconed svg {
+  margin-right: 7px;
+}
+
+.first p {
+  color: var(--Cyan);
+}
+
+.sconed p {
+  color: var(--Very-dark-blue-line);
+}
+
+/* End div with .text-icons class */
+
+/* Start footer */
+footer {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+footer img {
+  height: 50px;
+  margin: 0.5rem 10px 0 0;
+}
+
+footer p {
+  color: var(--Soft-blue);
+}
+
+footer p span {
+  color: var(--White);
+}
+/* End footer */
+
+/* Start attribution */
+.attribution {
+  color: var(--White);
+}
+.attribution a {
+  text-decoration: none;
+  color: var(--Soft-blue);
+}
+/* End attribution */
